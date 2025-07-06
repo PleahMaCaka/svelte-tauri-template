@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "svelte.svelte-vscode",
+    "biomejs.biome",
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+    "bbenoist.nix",
+    "brettm12345.nixfmt-vscode",
+    "1yib.rust-bundle",
+    "tamasfe.even-better-toml"
+  ]
+}

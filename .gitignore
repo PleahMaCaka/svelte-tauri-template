@@ -1,23 +1,23 @@
-.DS_Store
 node_modules
-/build
-/.svelte-kit
 
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
 .env
 .env.*
 !.env.example
+!.env.test
 
-vite.config.js
-vite.config.js.map
-
-**/*/*.js
-**/*/*.js.map
-
+# Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-
-.vscode/*
-!.vscode/settings.json
-
-.idea
-.fleet
