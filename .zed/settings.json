@@ -1,0 +1,10 @@
+{
+  "terminal": {
+    "shell": {
+      "with_arguments": {
+        "program": "nix",
+        "args": ["develop"]
+      }
+    }
+  }
+}

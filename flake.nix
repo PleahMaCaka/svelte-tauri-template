@@ -40,7 +40,6 @@
             "x86_64-linux-android"
           ];
         };
-        android = android-nixpkgs.sdk.${system};
         androidSdk = android-nixpkgs.sdk.${system} (
           sdkPkgs: with sdkPkgs; [
             build-tools-34-0-0
