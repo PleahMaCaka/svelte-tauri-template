@@ -26,7 +26,9 @@
       let
         pkgs = import nixpkgs {
           inherit system;
-          overlays = [ rust-overlay.overlays.default ];
+          overlays = [
+            rust-overlay.overlays.default
+          ];
           config = {
             android_sdk.accept_license = true;
             allowUnfree = true;
@@ -77,7 +79,6 @@
             pango
             webkitgtk_4_1
             openssl
-            rust
           ];
 
           packages =
@@ -87,6 +88,7 @@
               nix
               bun
               jdk
+              rust
             ]
             ++ [ androidSdk ];
 
