@@ -2,7 +2,7 @@
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "svelte-tauri-template",
   "version": "0.1.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "io.github.pleahmacaka.svelte-tauri-template",
   "build": {
     "frontendDist": "../static",
     "devUrl": "http://0.0.0.0:1420",
