@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "identifier": "io.github.pleahmacaka.svelte-tauri-template",
   "build": {
-    "frontendDist": "../static",
+    "frontendDist": "../build",
     "devUrl": "http://0.0.0.0:1420",
     "beforeDevCommand": "bun dev",
     "beforeBuildCommand": "bun run build"
