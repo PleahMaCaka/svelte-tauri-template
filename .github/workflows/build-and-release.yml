@@ -104,7 +104,5 @@ jobs:
       - name: Build Tauri app (test only)
         if: github.ref != 'refs/heads/release' && github.ref != 'refs/heads/dev'
         uses: tauri-apps/tauri-action@v0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           args: ${{ matrix.args }}
