@@ -35,11 +35,6 @@ jobs:
       - name: Build
         run: bun run build
 
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: frontend-dist
-          path: ./build
 
   build-tauri:
     needs: build-frontend
@@ -85,11 +80,13 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
 
-      - name: Download frontend build artifact
-        uses: actions/download-artifact@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          name: frontend-dist
-          path: ./build
+          bun-version: latest
+
+      - name: Install frontend dependencies
+        run: bun install
 
       - name: Build Tauri app (release/dev)
         if: github.ref == 'refs/heads/release' || github.ref == 'refs/heads/dev'
@@ -106,6 +103,8 @@ jobs:
 
       - name: Build Tauri app (test only)
         if: github.ref != 'refs/heads/release' && github.ref != 'refs/heads/dev'
-        run: |
-          cargo install tauri-cli --locked
-          cargo tauri build ${{ matrix.args }}
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        with:
+          args: ${{ matrix.args }}
