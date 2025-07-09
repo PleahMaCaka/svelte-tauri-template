@@ -9,10 +9,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "prepare": "svelte-kit sync || echo ''",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && biome check",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "biome check",
-    "lint:write": "biome check --write"
+    "format": "biome check --write"
   },
   "devDependencies": {
     "@biomejs/biome": "2.0.6",
@@ -25,6 +24,7 @@
     "@tauri-apps/cli": "^2.6.2",
     "@types/node": "^24.0.10",
     "daisyui": "^5.0.43",
+    "lefthook": "^1.12.0",
     "svelte": "^5.0.0",
     "svelte-check": "^4.0.0",
     "tailwindcss": "^4.0.0",
