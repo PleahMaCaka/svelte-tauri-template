@@ -104,4 +104,6 @@ jobs:
 
       - name: Build Tauri app (test only)
         if: github.ref != 'refs/heads/release' && github.ref != 'refs/heads/dev'
-        run: bunx tauri build ${{ matrix.args }}
+        run: |
+          cargo install tauri-cli --locked
+          tauri build ${{ matrix.args }}
