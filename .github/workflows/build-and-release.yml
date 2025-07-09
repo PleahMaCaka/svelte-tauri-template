@@ -46,6 +46,9 @@ jobs:
             args: '--target x86_64-apple-darwin'
           - platform: 'windows-latest'
             args: ''
+          - platform: 'ubuntu-22.04'
+            args: ''
+
     runs-on: ${{ matrix.platform }}
     steps:
       - name: Checkout repository
