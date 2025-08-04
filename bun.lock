@@ -34,7 +34,7 @@
         "@types/bun": "latest",
       },
       "peerDependencies": {
-        "core": "workspace:*",
+        "core": "workspace:core",
         "typescript": "^5",
       },
     },

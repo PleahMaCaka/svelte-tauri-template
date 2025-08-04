@@ -7,15 +7,8 @@
     "defaultBranch": "main"
   },
   "files": {
-    "ignoreUnknown": false,
-    "includes": [
-      "**",
-      "!**/.svelte-kit/",
-      "!**/node_modules",
-      "!**/build",
-      "!**/src-tauri",
-      "!flake.lock"
-    ]
+    "ignoreUnknown": true,
+    "includes": ["**", "!**/build", "!*.lock"]
   },
   "formatter": {
     "enabled": true,
