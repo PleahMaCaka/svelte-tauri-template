@@ -70,7 +70,7 @@ jobs:
       - name: Rust cache
         uses: Swatinem/rust-cache@v2
         with:
-          workspaces: "./src-tauri -> target"
+          workspaces: "./packages/app/src-tauri -> target"
           cache-on-failure: true
           key: ${{ matrix.platform }}-${{ matrix.args }}
 
