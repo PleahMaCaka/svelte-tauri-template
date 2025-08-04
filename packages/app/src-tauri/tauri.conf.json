@@ -1,5 +1,5 @@
 {
-  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "$schema": "../../../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "svelte-tauri-template",
   "version": "0.1.0",
   "identifier": "io.github.pleahmacaka.svelte-tauri-template",

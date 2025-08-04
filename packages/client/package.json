@@ -1,0 +1,12 @@
+{
+  "name": "client",
+  "module": "src/client.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5",
+    "core": "workspace:core"
+  }
+}
