@@ -7,7 +7,9 @@
     "csstools.postcss",
     "bbenoist.nix",
     "brettm12345.nixfmt-vscode",
-    "1yib.rust-bundle",
+    "rust-lang.rust-analyzer",
+    "fill-labs.dependi",
+    "dustypomerleau.rust-syntax",
     "tamasfe.even-better-toml"
   ]
 }
