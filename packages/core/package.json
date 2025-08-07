@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "core",
   "module": "src/client.ts",
   "type": "module",
   "devDependencies": {
