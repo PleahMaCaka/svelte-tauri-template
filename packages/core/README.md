@@ -1,4 +1,4 @@
-# core
+# client
 
 To install dependencies:
 

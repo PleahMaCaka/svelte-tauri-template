@@ -1,6 +1,6 @@
 {
-  "name": "core",
-  "module": "src/index.ts",
+  "name": "client",
+  "module": "src/client.ts",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
