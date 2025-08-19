@@ -1,3 +1,7 @@
+<script lang="ts">
+// script here...
+</script>
+
 <svelte:head>
   <title>Svelte Tauri Template</title>
 </svelte:head>
