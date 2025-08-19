@@ -57,6 +57,11 @@
       "trailingCommas": "none"
     }
   },
+  "css": {
+    "formatter": {
+      "enabled": true
+    }
+  },
   "overrides": [
     {
       "includes": ["**/*.svelte"],

@@ -1,3 +1,5 @@
+/** biome-ignore-all lint/suspicious/noUnknownAtRules: allow tailwind syntax */
+
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @plugin "daisyui";
