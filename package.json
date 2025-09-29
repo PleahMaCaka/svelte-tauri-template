@@ -5,8 +5,8 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@biomejs/biome": "^2.2.0",
-    "lefthook": "^1.12.3"
+    "@biomejs/biome": "^2.2.4",
+    "lefthook": "^1.13.4"
   },
   "scripts": {
     "check": "biome check",
