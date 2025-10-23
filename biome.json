@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "vcs": {
     "enabled": true,
     "clientKind": "git",
@@ -14,7 +14,7 @@
       "!**/node_modules",
       "!**/build",
       "!**/src-tauri",
-      "!flake.lock"
+      "!*.lock"
     ]
   },
   "formatter": {
@@ -59,6 +59,11 @@
     "formatter": {
       "enabled": true,
       "trailingCommas": "none"
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
     }
   },
   "overrides": [
