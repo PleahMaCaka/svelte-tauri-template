@@ -25,4 +25,3 @@
     class="animate-spin m-4"
   />
 </main>
-
