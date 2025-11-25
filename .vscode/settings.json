@@ -4,8 +4,7 @@
   "editor.defaultFormatter": "biomejs.biome",
   "biome.suggestInstallingGlobally": false,
   "editor.codeActionsOnSave": {
-    "quickfix.biome": "explicit",
-    "source.organizeImports.biome": "explicit"
+    "source.fixAll.biome": "explicit"
   },
   "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
